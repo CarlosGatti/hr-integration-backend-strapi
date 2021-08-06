@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "processes",
+  "info": {
+    "name": "process",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "themes": {
+      "via": "processes",
+      "collection": "theme"
+    },
+    "categories": {
+      "collection": "category",
+      "via": "process"
+    }
+  }
+}

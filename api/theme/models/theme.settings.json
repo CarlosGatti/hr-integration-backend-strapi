@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "themes",
+  "info": {
+    "name": "Theme",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "processes": {
+      "via": "themes",
+      "collection": "process",
+      "dominant": true
+    },
+    "post": {
+      "via": "themes",
+      "model": "post"
+    }
+  }
+}
